@@ -1,0 +1,162 @@
+body{ color: black;
+	  margin: 0;
+	  background-color: white;
+	  margin-top:0px;
+	  font-family: sans-serif;
+}
+.S1{
+  float: right;
+
+}
+
+
+/*navigation bar*/
+.bar { overflow: hidden;background: rgb(0,0,0);background:rgba(0,0,0,0.5);
+        position: fixed; /*set the navigation bar to fixed position*/
+        top: 2;  /*Position the navigation bar at the top of the page*/
+        width: 100%;
+        height: 60px;
+     }
+ /*Links inside the navigation bar*/    
+.bar a { float: right; display: block; color: white;
+         text-align: center; padding: 20.5px 16px; text-decoration: none;
+       }
+/*Change background on mouse over*/
+.bar a:hover { background: #ddd; color: black; }
+
+.contain {list-style-type: none; background: black url('https://www.catdalinteriors.com/wp-content/uploads/2019/03/Cat-Princess-road176340-1-copy.jpg'); 
+           width:100%;height: 700px;
+         }
+
+ .contain .cont{ 
+                 position: absolute; width: 100%; right: 0; top: 300px; color: white; background: rgb(0,0,0);
+                  background: rgba(0,0,0,0.5);
+                  color: #f1f1f1; width:auto; padding: 20px;
+                   }	   
+.contain .show { width: 100%; 
+                 animation:fadeIn 20s infinite linear; 
+                 height: 100%;
+                 background-size: 100% 100%; 
+                }	     
+@keyframes fadeIn { 
+                   0% { 
+                    background-image: url('https://www.iiad.edu.in/wp-content/uploads/2018/08/image001.jpg');
+                    }
+                    35% { background-image: url('http://aceinteriors.in/blog/wp-content/uploads/2018/03/b7a3417e022df43bf7e144dc0fd1f978.jpg');}
+                    70% {background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kitchen-ideas-hbx110119wholehome-015-1572549271.jpg');}
+                    
+                    100%{ background-image: url('http://www.cuded.com/wp-content/uploads/2017/08/TV-Wall-Idea-49.jpg'); }
+                 }	    
+
+
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 30%;
+  height: auto;
+  margin-left: 20px;
+  margin-top: 20px;
+  
+  display: block;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 20%;
+    height: 90px;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: blue;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap');
+
+/*Content*/
+.content { margin-top: 60px; /*Add a top margin to avoid content overlay*/ }
+.flex-container { width: 100%; font-family: 'ZCOOL XiaoWei', serif;font-size: 18px;}
+#left { float: left;width: 32%; height: 300px; padding: 10px 6px;margin-left:8px; }
+#right{ float: right;margin-left: 8px;width: 32%; height: 300px;padding: 10px 6px;}
+#center {float: left; width: 32%; height: 300px;padding: 10px 6px;}
+span{ font-size: 50px; }            
+ 
+li {list-style: none;
+    margin: 10px 30px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px 20px;
+    color: #00008B;
+    border: 1px solid #00008B;
+    border-radius: 50% } 
+#icons { background-image: linear-gradient(rgba(150,150,150,0.75),rgba(10,0,20,0.55)), url('https://i.pinimg.com/originals/2a/9c/a0/2a9ca0eaadcec654fd763f053476ef28.jpg');
+         background-repeat: no-repeat;width: 100%; 
+         height:500px;padding-top: 20px;
+       }
+       footer{ height: 400px;
+        width: auto;
+
+       }  
+
+.sidepanel { width: 0;
+             position: fixed;z-index: 1;
+             height: 100%;
+             left: 0;
+             top:0;
+             background-color: #111; 
+             overflow-x: hidden;
+             transition: 0.5s;
+             padding-top: 60px;
+           }
+.sidepanel a:hover { color:#f1f1f1; }
+.sidepanel a{ padding: 10px 10px 10px 32px;
+              text-decoration: none;
+              font-size: 25px;
+              color: #818181;
+              display: block;
+              transition: 0.3s;
+              margin-right: 80px ;
+            }
+.sidepanel .close{ position: absolute;
+                   top: 0;
+                   left:180px;
+                   font-size: 36px;
+                 }
+.open{  font-size: 20px;
+        cursor: pointer;
+        background:rgba(0,0,0,0);
+        padding: 10px 15px;
+        color: white;
+        border: none;
+        top:2;
+        float:left;
+    
+     }
+.open:hover{ background-color:rgba(0,0,0,0.2) ; }
